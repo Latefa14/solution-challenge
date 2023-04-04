@@ -1,0 +1,154 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min1.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container register">
+        <div class="row " id="user">
+            <div class="col-md-3 register-left">
+                <h3>Welcome To Sustain Market</h3>
+                <p>You are 30 seconds away from winning another life!</p>
+                <a type="submit" name="login" value="Login" style="color: #383d41;" href="login.php">login</a><br />
+            </div>
+
+            <div class="col-md-9 register-right">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary" onclick="hide1()">Technical</button>
+                                    </div>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h3 class="register-heading">Register now</h3>
+                        <form action="inter.php" method="post">
+                            <div class="row register-form">
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="First Name *" value=""
+                                            name="fristname" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Last Name *" value=""
+                                            name="lastname" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="Password *" value=""
+                                            name="password" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="Confirm Password *"
+                                            value="" name="repassword" />
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="maxl">
+                                            <label class="radio inline">
+                                                <input type="radio" name="type" value="male" checked>
+                                                <span> Male </span>
+                                            </label>
+                                            <label class="radio inline">
+                                                <input type="radio" name="type" value="female">
+                                                <span>Female </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Your Email *" value=""
+                                            name="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" minlength="10" maxlength="10" name="txtEmpPhone"
+                                            class="form-control" placeholder="Your Phone *" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control" name="sel">
+                                            <option class="hidden " value="" selected disabled>Please select your jop
+                                            </option>
+                                            <option value="1">Carpenter</option>
+                                            <option value="Electronics Technician">Electronics Technician</option>
+                                            <option value="tailor">tailor</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Enter Your Answer *"
+                                            value="" />
+                                    </div>
+                                    <input type="submit" class="btnRegister" name="submit" value="Register" />
+                                </div>
+
+                            </div>
+                            <input type="number" name="state" hidden value="0">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade show " id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <h3 class="register-heading" style="display: none;" id="te">Apply as a Hirer</h3>
+            <form action="reg.php" method="post">
+                <div class="row register-form hide" id="tech">
+                    
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="First Name *" value=""
+                                name="fristname" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Last Name *" value=""
+                                name="lastname" />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email *" value="" name="email" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" maxlength="10" minlength="10" class="form-control" placeholder="Phone *"
+                                value="" name="txtEmpPhone" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password *" value=""
+                                name="password" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Confirm Password *" value=""
+                                name="repassword" />
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" name="sel">
+                                <option class="hidden" selected disabled>Please select your jop</option>
+                                <option value="Carpenter">Carpenter</option>
+                                <option value="Electronics Technician">Electronics Technician</option>
+                                <option value="tailor">tailor</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="`Answer *" value="" />
+                        </div>
+                        <input type="number" name="state" hidden value="1">
+                        <input type="submit" class="btnRegister" name="submit" value="Register" />
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+
+    </div>
+
+    <script src="js/s.js"></script>
+</body>
+
+</html>
